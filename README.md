@@ -193,6 +193,35 @@ All requests and responses are in **JSON format**.
 ]
 ```
 
+### 5. Get All Contacts
+
+**GET** `/getAll`
+
+🔍 Returns a list of **all contacts** currently stored in the address book.
+
+#### 📥 Request
+
+No body required.
+
+#### 📤 Response
+
+```json
+[
+  {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "name": "Naruto Uzumaki",
+    "phone": "9876543210",
+    "email": "naruto@example.com"
+  },
+  {
+    "id": "e3b0c442-98fc-1c14-9af5-abc12d3e4d59",
+    "name": "Sasuke Uchiha",
+    "phone": "2345678901",
+    "email": "sasuke@example.com"
+  }
+]
+```
+
 ---
 
 ## 🔒 Validation & Error Handling
