@@ -1,0 +1,17 @@
+{
+  "name": "address-book",
+  "version": "1.0.0",
+  "description": "A modular address book API using Express.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
