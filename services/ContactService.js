@@ -42,6 +42,10 @@ class ContactService {
   searchContacts(query) {
     return ContactStore.search(query);
   }
+
+  getAllContacts() {
+    return ContactStore.getAll();
+  }
 }
 
 module.exports = new ContactService();

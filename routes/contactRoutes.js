@@ -6,5 +6,6 @@ router.post('/create', contactController.createContacts);
 router.put('/update', contactController.updateContacts);
 router.delete('/delete', contactController.deleteContacts);
 router.post('/search', contactController.searchContacts);
+router.get('/getAll', contactController.getAllContacts);
 
 module.exports = router;

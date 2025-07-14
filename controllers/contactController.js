@@ -72,9 +72,20 @@ const searchContacts = (req, res) => {
   }
 };
 
+const getAllContacts = (req, res) => {
+  try {
+    const contacts = ContactService.getAllContacts();
+    res.status(200).json(contacts);
+  } catch (err) {
+    console.error('Error in getAllContacts:', err);
+    res.status(500).json({ error: 'Failed to get all contacts.' });
+  }
+};
+
 module.exports = {
   createContacts,
   updateContacts,
   deleteContacts,
   searchContacts,
+  getAllContacts,
 };
